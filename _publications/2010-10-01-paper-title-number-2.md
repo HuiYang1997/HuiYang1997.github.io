@@ -1,15 +1,14 @@
 ---
-title: "Paper Title Number 2"
+title: "Efficient Extraction of EL-Ontology Deductive Modules"
 collection: publications
-permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+permalink: /publication/2023-06-01-efficient-el-ontology-deductive-modules
+excerpt: 'This paper explores efficient methods for extracting EL-ontology deductive modules.'
+date: 2023-06-01
+venue: 'Proceedings of the AAAI Conference on Artificial Intelligence'
+paperurl: 'https://doi.org/10.1609/aaai.v37i5.25808'
+citation: 'Yang, H., Ma, Y., & Bidoit, N. (2023). "Efficient Extraction of EL-Ontology Deductive Modules." <i>Proceedings of the AAAI Conference on Artificial Intelligence</i>, 37(5), 6575–6582.'
 ---
-This paper is about the number 2. The number 3 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper2.pdf)
+[Download paper here](https://doi.org/10.1609/aaai.v37i5.25808)
 
-Recommended citation: Your Name, You. (2010). "Paper Title Number 2." <i>Journal 1</i>. 1(2).
+Recommended citation: Yang, H., Ma, Y., & Bidoit, N. (2023). "Efficient Extraction of EL-Ontology Deductive Modules." *Proceedings of the AAAI Conference on Artificial Intelligence*, 37(5), 6575–6582.
