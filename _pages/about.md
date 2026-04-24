@@ -41,7 +41,7 @@ redirect_from:
 
 <div class="about-section">
 
-I am a Research Associate at the [University of Manchester](https://www.manchester.ac.uk/), working with [Dr. Jiaoyan Chen](https://jiaoyanchen.github.io/) on the [OntoEm](https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/Y017706/1) project (Semantic Embedding for Ontologies). My research focuses on **ontology reasoning, modularization, and embedding**, combining symbolic and neural approaches to knowledge representation.
+I am a Research Associate at the [University of Manchester](https://www.manchester.ac.uk/), working with [Dr. Jiaoyan Chen](https://chenjiaoyan.github.io/) on the [OntoEm](https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/Y017706/1) project (Semantic Embedding for Ontologies). My research focuses on **ontology reasoning, modularization, and embedding**, combining symbolic and neural approaches to knowledge representation.
 
 <h2>Research Experience</h2>
 
