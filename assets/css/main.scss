@@ -39,3 +39,34 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* ==========================================
+   Compact layout overrides
+   ========================================== */
+
+/* Reduce top margin */
+#main { margin-top: 1em; }
+
+/* Widen the content area at large breakpoints */
+@media (min-width: 64em) {
+  .sidebar.sticky { width: 18%; }
+  .page, .archive {
+    width: 79%;
+    float: right;
+    padding-left: 1.5em;
+  }
+}
+
+/* Tighter author sidebar */
+.author__avatar img {
+  max-width: 110px;
+}
+.author__bio { font-size: 0.82em; }
+.author__urls { font-size: 0.82em; }
+
+/* Reduce page title size */
+.page__title, h1.page__title { font-size: 1.5em; margin-bottom: 0.3em; }
+
+/* Reduce heading spacing globally */
+h2 { margin-top: 1.2em; margin-bottom: 0.3em; }
+h3 { margin-top: 0.8em; margin-bottom: 0.2em; }
