@@ -6,6 +6,7 @@ excerpt: 'This paper proposes alleviating over-smoothing in GNNs via aggregation
 date: 2024-05-01
 venue: 'Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD 2024)'
 paperurl: 'https://doi.org/10.1007/978-981-97-2253-2_31'
+arxivurl: 'https://arxiv.org/abs/2407.19231'
 citation: 'Zhou, D., Yang, H., Xiong, B., Ma, Y., & Kharlamov, E. (2024). "Alleviating Over-Smoothing via Aggregation over Compact Manifolds." <i>Pacific-Asia Conference on Knowledge Discovery and Data Mining</i>, pp. 390–404.'
 ---
 
