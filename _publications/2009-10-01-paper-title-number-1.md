@@ -1,10 +1,10 @@
 ---
 title: "Efficient Computation of General Modules for ALC Ontologies"
 collection: publications
-permalink: /publication/2023-08-01-efficient-computation-general-modules
+permalink: /publication/2023-ijcai-general-modules-alc
 excerpt: 'This paper presents a method for efficiently computing general modules for ALC ontologies.'
 date: 2023-08-01
-venue: 'Proceedings of the Thirty-Second International Joint Conference on Artificial Intelligence (IJCAI-23)'
+venue: 'International Joint Conference on Artificial Intelligence (IJCAI 2023)'
 paperurl: 'https://doi.org/10.24963/ijcai.2023/374'
 citation: 'Yang, H., Koopmann, P., Ma, Y., & Bidoit, N. (2023). "Efficient Computation of General Modules for ALC Ontologies." <i>Proceedings of the Thirty-Second International Joint Conference on Artificial Intelligence (IJCAI-23)</i>, 3356–3364.'
 ---
