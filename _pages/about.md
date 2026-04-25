@@ -72,6 +72,13 @@ redirect_from:
 
 <p class="intro-box">I am a Research Associate at the <a href="https://www.manchester.ac.uk/">University of Manchester</a>, working with <a href="https://chenjiaoyan.github.io/">Dr. Jiaoyan Chen</a> on the <a href="https://research.manchester.ac.uk/en/projects/ontoem-semantic-embedding-for-ontologies/">OntoEm</a> project (Semantic Embedding for Ontologies). My research focuses on <strong>ontology reasoning, modularization, and embedding</strong>, combining symbolic and neural approaches to knowledge representation.</p>
 
+<h2>Recent News</h2>
+
+<ul style="font-size:0.9em; line-height:1.7; padding-left:1.4em;">
+  <li><strong>Apr 2026</strong> — Paper <em>RegD: Hierarchical Embeddings via Dissimilarity between Arbitrary Euclidean Regions</em> accepted at <strong>KR 2026</strong> (ML Track). [<a href="https://arxiv.org/abs/2501.17518">arXiv</a>]</li>
+  <li><strong>Jan 2026</strong> — Paper <em>Large Language Model for OWL Proofs</em> accepted at <strong>The Web Conference 2026 (WWW)</strong>. [<a href="https://arxiv.org/abs/2601.12444">arXiv</a>]</li>
+</ul>
+
 <h2>Research Experience</h2>
 
 <div class="exp-entry">
@@ -140,9 +147,9 @@ redirect_from:
 
 <div class="pub-mini"><span class="venue">KR 2026</span> <em><a href="https://arxiv.org/abs/2501.17518">RegD: Hierarchical Embeddings via Dissimilarity between Arbitrary Euclidean Regions.</a></em> <strong>H. Yang</strong>, J. Chen.<span class="badge">Accepted</span></div>
 
-<div class="pub-mini"><span class="venue">ISWC 2025</span> <em><a href="https://doi.org/10.1007/978-3-031-77792-9_26">Language Models as Ontology Encoders.</a></em> <strong>H. Yang</strong>, J. Chen, Y. He, Y. Gao, I. Horrocks. pp. 443–461.</div>
+<div class="pub-mini"><span class="venue">ISWC 2025</span> <em><a href="https://doi.org/10.1007/978-3-032-09527-5_24">Language Models as Ontology Encoders.</a></em> <strong>H. Yang</strong>, J. Chen, Y. He, Y. Gao, I. Horrocks. pp. 443–461.</div>
 
-<div class="pub-mini"><span class="venue">WWW 2025</span> <em><a href="https://doi.org/10.1145/3701551.3703512">TransBox: EL<sup>++</sup>-closed Ontology Embedding.</a></em> <strong>H. Yang</strong>, J. Chen, U. Sattler. pp. 22–34.</div>
+<div class="pub-mini"><span class="venue">WWW 2025</span> <em><a href="https://doi.org/10.1145/3696410.3714672">TransBox: EL<sup>++</sup>-closed Ontology Embedding.</a></em> <strong>H. Yang</strong>, J. Chen, U. Sattler. pp. 22–34.</div>
 
 <div class="pub-mini"><span class="venue">IJCAI 2023</span> <em><a href="https://doi.org/10.24963/ijcai.2023/374">Efficient Computation of General Modules for ALC Ontologies.</a></em> <strong>H. Yang</strong>, P. Koopmann, Y. Ma, N. Bidoit. pp. 3356–3364.</div>
 
