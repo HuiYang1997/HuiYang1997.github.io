@@ -10,38 +10,67 @@ redirect_from:
 
 <style>
 .about-section h2 {
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 4px;
-  margin-top: 24px;
-  margin-bottom: 10px;
-  font-size: 1.1em;
-  color: #333;
+  border-left: 3px solid #1a56b0;
+  padding-left: 10px;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 1.08em;
+  color: #1a3a6b;
+  letter-spacing: 0.01em;
+}
+.intro-box {
+  background: #f5f8ff;
+  border-left: 3px solid #1a56b0;
+  padding: 11px 15px;
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 18px;
+  font-size: 0.93em;
+  line-height: 1.65;
 }
 .exp-entry {
-  margin-bottom: 12px;
+  margin-bottom: 13px;
+  padding-left: 11px;
+  border-left: 2px solid #dce6f7;
 }
 .exp-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
+  gap: 4px;
 }
-.exp-title { font-weight: bold; font-size: 0.95em; }
-.exp-date { color: #888; font-size: 0.85em; white-space: nowrap; }
-.exp-sub { color: #555; font-size: 0.88em; margin: 1px 0 3px 0; }
-.exp-desc { font-size: 0.88em; color: #444; margin: 2px 0 0 0; }
-.pub-mini { font-size: 0.88em; line-height: 1.5; margin-bottom: 5px; }
-.pub-mini .venue { font-weight: bold; color: #494e52; margin-right: 6px; }
+.exp-title { font-weight: 600; font-size: 0.94em; color: #1a3a6b; }
+.exp-date {
+  background: #eef2ff;
+  color: #1a56b0;
+  font-size: 0.76em;
+  white-space: nowrap;
+  padding: 1px 8px;
+  border-radius: 10px;
+}
+.exp-sub { color: #555; font-size: 0.86em; margin: 2px 0 3px 0; }
+.exp-desc { font-size: 0.86em; color: #555; margin: 1px 0 0 0; }
+.pub-mini { font-size: 0.87em; line-height: 1.5; margin-bottom: 6px; }
+.pub-mini .venue {
+  display: inline-block;
+  background: #eef2ff;
+  color: #1a56b0;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 0 6px;
+  margin-right: 6px;
+  font-size: 0.9em;
+}
 .pub-mini .badge {
-  display: inline-block; background: #e8f0fe; color: #1a56b0;
-  border-radius: 3px; padding: 0 4px; font-size: 0.8em; font-weight: bold;
+  display: inline-block; background: #e6f7ee; color: #1a7a40;
+  border-radius: 3px; padding: 0 5px; font-size: 0.79em; font-weight: bold;
   margin-left: 3px; vertical-align: middle;
 }
 </style>
 
 <div class="about-section">
 
-<p>I am a Research Associate at the <a href="https://www.manchester.ac.uk/">University of Manchester</a>, working with <a href="https://chenjiaoyan.github.io/">Dr. Jiaoyan Chen</a> on the <a href="https://research.manchester.ac.uk/en/projects/ontoem-semantic-embedding-for-ontologies/">OntoEm</a> project (Semantic Embedding for Ontologies). My research focuses on <strong>ontology reasoning, modularization, and embedding</strong>, combining symbolic and neural approaches to knowledge representation.</p>
+<p class="intro-box">I am a Research Associate at the <a href="https://www.manchester.ac.uk/">University of Manchester</a>, working with <a href="https://chenjiaoyan.github.io/">Dr. Jiaoyan Chen</a> on the <a href="https://research.manchester.ac.uk/en/projects/ontoem-semantic-embedding-for-ontologies/">OntoEm</a> project (Semantic Embedding for Ontologies). My research focuses on <strong>ontology reasoning, modularization, and embedding</strong>, combining symbolic and neural approaches to knowledge representation.</p>
 
 <h2>Research Experience</h2>
 

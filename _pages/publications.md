@@ -11,11 +11,12 @@ You can also find my articles on <a href="https://scholar.google.com/citations?u
 
 <style>
 .pub-section h2 {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 3px;
-  margin-top: 22px;
+  border-left: 3px solid #1a56b0;
+  padding-left: 10px;
+  margin-top: 24px;
   margin-bottom: 10px;
   font-size: 1.05em;
+  color: #1a3a6b;
 }
 .pub-entry {
   display: flex;
@@ -25,17 +26,22 @@ You can also find my articles on <a href="https://scholar.google.com/citations?u
   font-size: 0.92em;
 }
 .pub-tag {
-  min-width: 88px;
-  font-weight: bold;
-  color: #494e52;
+  min-width: 82px;
+  font-weight: 600;
+  color: #1a56b0;
+  background: #eef2ff;
+  border-radius: 3px;
+  padding: 1px 6px;
   flex-shrink: 0;
+  font-size: 0.85em;
+  text-align: center;
 }
 .pub-content { flex: 1; }
 .pub-title { font-style: italic; }
 .pub-badge {
   display: inline-block;
-  background: #e8f0fe;
-  color: #1a56b0;
+  background: #e6f7ee;
+  color: #1a7a40;
   border-radius: 3px;
   padding: 0 5px;
   font-size: 0.82em;

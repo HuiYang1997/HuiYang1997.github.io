@@ -1,2 +1,9 @@
 _site/
+*.tex
+*.pdf
+.DS_Store
+Gemfile.lock
+.bundle/
+vendor/bundle/
+node_modules/
 
