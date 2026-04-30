@@ -10,47 +10,74 @@ author_profile: true
 You can also find my articles on <a href="https://scholar.google.com/citations?user=HqVFCscAAAAJ&hl=en">my Google Scholar profile</a>.
 
 <style>
+.pub-section { max-width: 740px; color: #2b2f36; }
+.pub-section a { color: #1a56b0; text-decoration: none; border-bottom: 1px solid rgba(26, 86, 176, 0.18); transition: border-color 0.15s ease, color 0.15s ease; }
+.pub-section a:hover { color: #0d3b8c; border-bottom-color: rgba(26, 86, 176, 0.65); }
+
 .pub-section h2 {
-  border-left: 3px solid #1a56b0;
-  padding-left: 10px;
-  margin-top: 24px;
-  margin-bottom: 10px;
-  font-size: 1.05em;
-  color: #1a3a6b;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #1a56b0;
+  margin: 2.1rem 0 1rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid #e5e9f0;
+  border-left: none;
 }
+.pub-section h2:first-of-type { margin-top: 1.6rem; }
+
 .pub-entry {
   display: flex;
-  margin-bottom: 6px;
-  gap: 10px;
-  line-height: 1.45;
-  font-size: 0.92em;
+  margin-bottom: 0.85rem;
+  gap: 0.85rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: #3a3f48;
 }
 .pub-tag {
-  min-width: 82px;
-  font-weight: 600;
+  min-width: 5.4rem;
+  font-weight: 700;
   color: #1a56b0;
-  background: #eef2ff;
+  background: #eef3fb;
   border-radius: 3px;
-  padding: 1px 6px;
+  padding: 0.18rem 0.45rem;
   flex-shrink: 0;
-  font-size: 0.85em;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   text-align: center;
+  height: fit-content;
+  align-self: flex-start;
+  margin-top: 0.2rem;
 }
-.pub-content { flex: 1; }
-.pub-title { font-style: italic; }
+.pub-content { flex: 1; min-width: 0; }
+.pub-title { font-style: italic; color: #2b2f36; }
+.pub-content strong { color: #1a3a6b; }
 .pub-badge {
   display: inline-block;
-  background: #e6f7ee;
+  background: #e8f5ee;
   color: #1a7a40;
   border-radius: 3px;
-  padding: 0 5px;
-  font-size: 0.82em;
-  font-weight: bold;
-  margin-left: 4px;
-  vertical-align: middle;
+  padding: 0.05rem 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-left: 0.35rem;
+  vertical-align: 1px;
 }
-.pub-links { font-size: 0.82em; margin-left: 4px; }
-.pub-links a { color: #888; }
+.pub-links { font-size: 0.85rem; margin-left: 0.25rem; color: #6c727c; }
+.pub-links a {
+  color: #6c727c;
+  border-bottom: none;
+}
+.pub-links a:hover { color: #1a56b0; }
+
+@media (max-width: 600px) {
+  .pub-entry { flex-direction: column; gap: 0.25rem; }
+  .pub-tag { align-self: flex-start; margin-top: 0; }
+}
 </style>
 
 <div class="pub-section">

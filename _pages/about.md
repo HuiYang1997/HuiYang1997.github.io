@@ -9,62 +9,144 @@ redirect_from:
 ---
 
 <style>
-.about-section h2 {
-  border-left: 3px solid #1a56b0;
-  padding-left: 10px;
-  margin-top: 28px;
-  margin-bottom: 12px;
-  font-size: 1.08em;
-  color: #1a3a6b;
-  letter-spacing: 0.01em;
+.about-section {
+  font-size: 1rem;
+  line-height: 1.72;
+  color: #2b2f36;
+  max-width: 740px;
 }
+.about-section p { margin-bottom: 0.8rem; }
+.about-section a { color: #1a56b0; text-decoration: none; border-bottom: 1px solid rgba(26, 86, 176, 0.18); transition: border-color 0.15s ease, color 0.15s ease; }
+.about-section a:hover { color: #0d3b8c; border-bottom-color: rgba(26, 86, 176, 0.65); }
+
+.about-section h2 {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #1a56b0;
+  margin: 2.1rem 0 0.95rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid #e5e9f0;
+  border-left: none;
+}
+.about-section h2:first-of-type { margin-top: 1.6rem; }
+
 .intro-box {
-  background: #f5f8ff;
-  border-left: 3px solid #1a56b0;
-  padding: 11px 15px;
-  border-radius: 0 4px 4px 0;
-  margin-bottom: 18px;
-  font-size: 0.93em;
+  background: transparent;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  margin: 0 0 1.4rem;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: #2b2f36;
+}
+
+.news-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  font-size: 0.93rem;
   line-height: 1.65;
 }
+.news-list li {
+  padding: 0.45rem 0;
+  border-bottom: 1px solid #f0f2f6;
+  color: #3a3f48;
+}
+.news-list li:last-child { border-bottom: none; }
+.news-list strong:first-child {
+  display: inline-block;
+  min-width: 5.2rem;
+  color: #1a56b0;
+  font-weight: 600;
+  font-size: 0.83rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
 .exp-entry {
-  margin-bottom: 13px;
-  padding-left: 11px;
-  border-left: 2px solid #dce6f7;
+  margin-bottom: 1.05rem;
+  padding-left: 0;
+  border-left: none;
 }
 .exp-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 0.6rem;
+  margin-bottom: 0.15rem;
 }
-.exp-title { font-weight: 600; font-size: 0.94em; color: #1a3a6b; }
+.exp-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #1a3a6b;
+  letter-spacing: 0.005em;
+}
 .exp-date {
-  background: #eef2ff;
-  color: #1a56b0;
-  font-size: 0.76em;
+  background: transparent;
+  color: #6c727c;
+  font-size: 0.83rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
   white-space: nowrap;
-  padding: 1px 8px;
-  border-radius: 10px;
+  padding: 0;
+  border-radius: 0;
+  letter-spacing: 0.01em;
 }
-.exp-sub { color: #555; font-size: 0.86em; margin: 2px 0 3px 0; }
-.exp-desc { font-size: 0.86em; color: #555; margin: 1px 0 0 0; }
-.pub-mini { font-size: 0.87em; line-height: 1.5; margin-bottom: 6px; }
+.exp-sub {
+  color: #4d525c;
+  font-size: 0.92rem;
+  margin: 0.1rem 0 0.25rem;
+  line-height: 1.55;
+}
+.exp-desc {
+  color: #5a606b;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.pub-mini {
+  font-size: 0.93rem;
+  line-height: 1.6;
+  margin-bottom: 0.7rem;
+  color: #3a3f48;
+}
+.pub-mini em { color: #2b2f36; }
 .pub-mini .venue {
   display: inline-block;
-  background: #eef2ff;
+  background: #eef3fb;
   color: #1a56b0;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
   border-radius: 3px;
-  padding: 0 6px;
-  margin-right: 6px;
-  font-size: 0.9em;
+  padding: 0.12rem 0.5rem;
+  margin-right: 0.5rem;
+  vertical-align: 1px;
 }
 .pub-mini .badge {
-  display: inline-block; background: #e6f7ee; color: #1a7a40;
-  border-radius: 3px; padding: 0 5px; font-size: 0.79em; font-weight: bold;
-  margin-left: 3px; vertical-align: middle;
+  display: inline-block;
+  background: #e8f5ee;
+  color: #1a7a40;
+  border-radius: 3px;
+  padding: 0.05rem 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-left: 0.35rem;
+  vertical-align: 1px;
+}
+
+.full-link-row {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #1a56b0;
 }
 </style>
 
@@ -74,7 +156,7 @@ redirect_from:
 
 <h2>Recent News</h2>
 
-<ul style="font-size:0.9em; line-height:1.7; padding-left:1.4em;">
+<ul class="news-list">
   <li><strong>Apr 2026</strong> — Paper <em>RegD: Hierarchical Embeddings via Dissimilarity between Arbitrary Euclidean Regions</em> accepted at <strong>KR 2026</strong> (ML Track). [<a href="https://arxiv.org/abs/2501.17518">arXiv</a>]</li>
   <li><strong>Jan 2026</strong> — Paper <em>Large Language Model for OWL Proofs</em> accepted at <strong>The Web Conference 2026 (WWW)</strong>. [<a href="https://arxiv.org/abs/2601.12444">arXiv</a>]</li>
 </ul>
@@ -155,6 +237,6 @@ redirect_from:
 
 <div class="pub-mini"><span class="venue">AAAI 2023</span> <em><a href="https://doi.org/10.1609/aaai.v37i5.25808">Efficient Extraction of EL-Ontology Deductive Modules.</a></em> <strong>H. Yang</strong>, Y. Ma, N. Bidoit. pp. 6575–6582.</div>
 
-<p style="font-size:0.88em;margin-top:8px;"><a href="/publications/">→ Full publication list</a></p>
+<p class="full-link-row"><a href="/publications/">→ Full publication list</a></p>
 
 </div>
