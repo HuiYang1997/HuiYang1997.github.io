@@ -214,8 +214,8 @@ redirect_from:
 <h2 id="news">Recent News</h2>
 
 <ul class="news-list">
-  <li><strong>Apr 2026</strong> <span>Paper <em>RegD: Hierarchical Embeddings via Dissimilarity between Arbitrary Euclidean Regions</em> accepted at <strong>KR 2026</strong> (ML Track). [<a href="https://arxiv.org/abs/2501.17518">arXiv</a>]</span></li>
-  <li><strong>Jan 2026</strong> <span>Paper <em>Large Language Model for OWL Proofs</em> accepted at <strong>The Web Conference 2026 (WWW)</strong>. [<a href="https://arxiv.org/abs/2601.12444">arXiv</a>]</span></li>
+  <li><strong>Apr 2026</strong> <span>A paper accepted at <strong>KR 2026</strong>. [<a href="https://arxiv.org/abs/2501.17518">arXiv</a>]</span></li>
+  <li><strong>Jan 2026</strong> <span>A paper accepted at <strong>WWW 2026</strong>. [<a href="https://arxiv.org/abs/2601.12444">arXiv</a>]</span></li>
 </ul>
 
 <h2 id="experience">Research Experience</h2>
