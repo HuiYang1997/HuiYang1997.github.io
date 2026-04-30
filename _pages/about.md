@@ -9,16 +9,14 @@ redirect_from:
 ---
 
 <style>
-html { scroll-behavior: smooth; }
-
 .about-section {
   font-size: 1rem;
-  line-height: 1.72;
+  line-height: 1.7;
   color: #1f2937;
   max-width: 760px;
 }
-.about-section [id] { scroll-margin-top: 1rem; }
-.about-section p { margin-bottom: 0.85rem; }
+.about-section [id] { scroll-margin-top: 0.5rem; }
+.about-section p { margin-bottom: 0.8rem; }
 .about-section strong { color: #0f172a; font-weight: 600; }
 .about-section em { color: #111827; font-style: italic; }
 .about-section a {
@@ -33,21 +31,21 @@ html { scroll-behavior: smooth; }
 }
 
 .page__title {
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   font-weight: 700;
   color: #0f172a;
   letter-spacing: -0.025em;
-  margin: 0.4rem 0 0.4rem;
+  margin: 0.2rem 0 0.3rem;
   line-height: 1.15;
 }
 
 .about-section h2 {
-  font-size: 1.2rem;
+  font-size: 1.18rem;
   font-weight: 700;
   color: #0f3a8c;
   letter-spacing: -0.005em;
-  margin: 2.6rem 0 1.15rem;
-  padding-bottom: 0.5rem;
+  margin: 1.9rem 0 0.95rem;
+  padding-bottom: 0.45rem;
   border-bottom: 1px solid #e3e6ed;
   position: relative;
 }
@@ -56,25 +54,25 @@ html { scroll-behavior: smooth; }
   position: absolute;
   left: 0;
   bottom: -1px;
-  width: 56px;
+  width: 48px;
   height: 2px;
   background: #1d4ed8;
 }
 .about-section h3 {
-  font-size: 0.76rem;
+  font-size: 0.74rem;
   font-weight: 700;
   color: #475569;
   letter-spacing: 0.13em;
   text-transform: uppercase;
-  margin: 1.7rem 0 0.85rem;
+  margin: 1.4rem 0 0.7rem;
 }
-.about-section h3:first-of-type { margin-top: 1.2rem; }
+.about-section h3:first-of-type { margin-top: 0.9rem; }
 
 .intro-lead {
-  font-size: 1.04rem;
-  line-height: 1.78;
+  font-size: 1.03rem;
+  line-height: 1.75;
   color: #1f2937;
-  margin: 0.4rem 0 0.4rem;
+  margin: 0.5rem 0 0.4rem;
   padding-left: 0;
   border-left: none;
 }
@@ -84,19 +82,20 @@ html { scroll-behavior: smooth; }
   padding-left: 0;
   margin: 0;
   font-size: 0.94rem;
-  line-height: 1.65;
+  line-height: 1.6;
 }
 .news-list li {
   display: flex;
-  gap: 0.95rem;
-  padding: 0.6rem 0;
+  gap: 0.9rem;
+  padding: 0.5rem 0;
   border-bottom: 1px solid #eef0f4;
   color: #374151;
 }
-.news-list li:last-child { border-bottom: none; padding-bottom: 0; }
+.news-list li:first-child { padding-top: 0.2rem; }
+.news-list li:last-child { border-bottom: none; padding-bottom: 0.1rem; }
 .news-list li > strong:first-child {
   flex-shrink: 0;
-  width: 5.6rem;
+  width: 5.4rem;
   color: #0f3a8c;
   font-weight: 600;
   font-size: 0.78rem;
@@ -104,21 +103,19 @@ html { scroll-behavior: smooth; }
   text-transform: uppercase;
   padding-top: 0.18rem;
 }
-.news-list li > strong:first-child + br { display: none; }
 
 .exp-entry {
-  margin-bottom: 1.45rem;
+  margin-bottom: 1.15rem;
   padding-left: 0;
   border-left: none;
 }
-.exp-entry:last-child { margin-bottom: 0; }
 .exp-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
   gap: 0.6rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.15rem;
 }
 .exp-title {
   font-weight: 600;
@@ -140,25 +137,25 @@ html { scroll-behavior: smooth; }
 }
 .exp-sub {
   color: #475569;
-  font-size: 0.93rem;
-  margin: 0.1rem 0 0.3rem;
-  line-height: 1.55;
+  font-size: 0.92rem;
+  margin: 0.05rem 0 0.25rem;
+  line-height: 1.5;
 }
 .exp-desc {
   color: #64748b;
-  font-size: 0.9rem;
+  font-size: 0.89rem;
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.55;
 }
 
-.pub-grid { margin-top: 0.4rem; }
+.pub-grid { margin: 0.2rem 0 0.3rem; }
 .pub-entry {
   display: grid;
-  grid-template-columns: 5.8rem 1fr;
-  column-gap: 1rem;
-  margin-bottom: 0.95rem;
-  line-height: 1.6;
-  font-size: 0.94rem;
+  grid-template-columns: 5.6rem 1fr;
+  column-gap: 0.95rem;
+  margin-bottom: 0.78rem;
+  line-height: 1.55;
+  font-size: 0.93rem;
   color: #334155;
 }
 .pub-tag {
@@ -172,8 +169,9 @@ html { scroll-behavior: smooth; }
   text-transform: uppercase;
   text-align: center;
   height: fit-content;
-  margin-top: 0.25rem;
+  margin-top: 0.2rem;
 }
+.pub-grid > .pub-entry:last-child { margin-bottom: 0; }
 .pub-content { min-width: 0; }
 .pub-title { font-style: italic; color: #0f172a; }
 .pub-content strong { color: #1e3a8a; font-weight: 600; }
@@ -195,9 +193,9 @@ html { scroll-behavior: smooth; }
 .pub-links a:hover { color: #1d4ed8; }
 
 .scholar-note {
-  font-size: 0.92rem;
+  font-size: 0.91rem;
   color: #64748b;
-  margin: 0.4rem 0 0.2rem;
+  margin: 0.2rem 0 0;
 }
 
 @media (max-width: 600px) {
