@@ -10,72 +10,85 @@ author_profile: true
 You can also find my articles on <a href="https://scholar.google.com/citations?user=HqVFCscAAAAJ&hl=en">my Google Scholar profile</a>.
 
 <style>
-.pub-section { max-width: 740px; color: #2b2f36; }
-.pub-section a { color: #1a56b0; text-decoration: none; border-bottom: 1px solid rgba(26, 86, 176, 0.18); transition: border-color 0.15s ease, color 0.15s ease; }
-.pub-section a:hover { color: #0d3b8c; border-bottom-color: rgba(26, 86, 176, 0.65); }
+.pub-section { max-width: 760px; color: #1f2937; font-size: 1rem; line-height: 1.7; }
+.pub-section a {
+  color: #1e40af;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(30, 64, 175, 0.22);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.pub-section a:hover { color: #1e3a8a; border-bottom-color: #1e40af; }
 
 .pub-section h2 {
-  font-size: 0.78rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: #1a56b0;
-  margin: 2.1rem 0 1rem;
-  padding-bottom: 0.45rem;
-  border-bottom: 1px solid #e5e9f0;
-  border-left: none;
+  color: #1e3a8a;
+  letter-spacing: -0.005em;
+  margin: 2.2rem 0 1.1rem;
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
 }
-.pub-section h2:first-of-type { margin-top: 1.6rem; }
+.pub-section h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+  margin-top: 0.18rem;
+}
+.pub-section h2:first-of-type { margin-top: 1.4rem; }
 
 .pub-entry {
   display: flex;
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.95rem;
   gap: 0.85rem;
   line-height: 1.6;
   font-size: 0.95rem;
-  color: #3a3f48;
+  color: #374151;
 }
 .pub-tag {
-  min-width: 5.4rem;
+  min-width: 5.6rem;
   font-weight: 700;
-  color: #1a56b0;
-  background: #eef3fb;
+  color: #1e3a8a;
+  background: #e0e7ff;
   border-radius: 3px;
-  padding: 0.18rem 0.45rem;
+  padding: 0.2rem 0.5rem;
   flex-shrink: 0;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
   height: fit-content;
   align-self: flex-start;
-  margin-top: 0.2rem;
+  margin-top: 0.18rem;
 }
 .pub-content { flex: 1; min-width: 0; }
-.pub-title { font-style: italic; color: #2b2f36; }
-.pub-content strong { color: #1a3a6b; }
+.pub-title { font-style: italic; color: #111827; }
+.pub-content strong { color: #1e3a8a; font-weight: 600; }
 .pub-badge {
   display: inline-block;
-  background: #e8f5ee;
-  color: #1a7a40;
+  background: #dcfce7;
+  color: #15803d;
   border-radius: 3px;
-  padding: 0.05rem 0.4rem;
+  padding: 0.1rem 0.45rem;
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-left: 0.35rem;
+  margin-left: 0.4rem;
   vertical-align: 1px;
 }
-.pub-links { font-size: 0.85rem; margin-left: 0.25rem; color: #6c727c; }
+.pub-links { font-size: 0.85rem; margin-left: 0.3rem; color: #9ca3af; }
 .pub-links a {
-  color: #6c727c;
+  color: #6b7280;
   border-bottom: none;
 }
-.pub-links a:hover { color: #1a56b0; }
+.pub-links a:hover { color: #1e40af; }
 
 @media (max-width: 600px) {
-  .pub-entry { flex-direction: column; gap: 0.25rem; }
+  .pub-entry { flex-direction: column; gap: 0.3rem; }
   .pub-tag { align-self: flex-start; margin-top: 0; }
 }
 </style>
