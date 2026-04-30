@@ -9,152 +9,180 @@ redirect_from:
 ---
 
 <style>
+html { scroll-behavior: smooth; }
+
 .about-section {
   font-size: 1rem;
   line-height: 1.72;
   color: #1f2937;
   max-width: 760px;
 }
+.about-section [id] { scroll-margin-top: 1rem; }
 .about-section p { margin-bottom: 0.85rem; }
-.about-section strong { color: #111827; font-weight: 600; }
+.about-section strong { color: #0f172a; font-weight: 600; }
+.about-section em { color: #111827; font-style: italic; }
 .about-section a {
-  color: #1e40af;
+  color: #1d4ed8;
   text-decoration: none;
-  border-bottom: 1px solid rgba(30, 64, 175, 0.22);
+  border-bottom: 1px solid rgba(29, 78, 216, 0.22);
   transition: border-color 0.15s ease, color 0.15s ease;
 }
 .about-section a:hover {
   color: #1e3a8a;
-  border-bottom-color: #1e40af;
+  border-bottom-color: #1d4ed8;
+}
+
+.page__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.025em;
+  margin: 0.4rem 0 0.4rem;
+  line-height: 1.15;
 }
 
 .about-section h2 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  color: #1e3a8a;
+  color: #0f3a8c;
   letter-spacing: -0.005em;
-  margin: 2.2rem 0 1.1rem;
-  padding: 0;
-  border: none;
-  display: flex;
-  align-items: center;
-  gap: 0.85rem;
+  margin: 2.6rem 0 1.15rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e3e6ed;
+  position: relative;
 }
 .about-section h2::after {
   content: "";
-  flex: 1;
-  height: 1px;
-  background: #e5e7eb;
-  margin-top: 0.18rem;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 56px;
+  height: 2px;
+  background: #1d4ed8;
 }
-.about-section h2:first-of-type { margin-top: 1.4rem; }
+.about-section h3 {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #475569;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  margin: 1.7rem 0 0.85rem;
+}
+.about-section h3:first-of-type { margin-top: 1.2rem; }
 
-.intro-box {
-  background: linear-gradient(to right, #f3f6fc 0%, #fafbfd 100%);
-  border-left: 3px solid #1e40af;
-  border-radius: 0 5px 5px 0;
-  padding: 1rem 1.2rem;
-  margin: 0 0 1.4rem;
-  font-size: 1rem;
-  line-height: 1.72;
+.intro-lead {
+  font-size: 1.04rem;
+  line-height: 1.78;
   color: #1f2937;
+  margin: 0.4rem 0 0.4rem;
+  padding-left: 0;
+  border-left: none;
 }
 
 .news-list {
   list-style: none;
   padding-left: 0;
   margin: 0;
-  font-size: 0.93rem;
+  font-size: 0.94rem;
   line-height: 1.65;
 }
 .news-list li {
-  padding: 0.55rem 0;
+  display: flex;
+  gap: 0.95rem;
+  padding: 0.6rem 0;
   border-bottom: 1px solid #eef0f4;
   color: #374151;
 }
 .news-list li:last-child { border-bottom: none; padding-bottom: 0; }
-.news-list strong:first-child {
-  display: inline-block;
-  min-width: 5.5rem;
-  color: #1e40af;
+.news-list li > strong:first-child {
+  flex-shrink: 0;
+  width: 5.6rem;
+  color: #0f3a8c;
   font-weight: 600;
-  font-size: 0.83rem;
-  letter-spacing: 0.02em;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+  padding-top: 0.18rem;
 }
+.news-list li > strong:first-child + br { display: none; }
 
 .exp-entry {
-  margin-bottom: 1.1rem;
-  padding: 0.1rem 0 0.15rem 1rem;
-  border-left: 2px solid #e5e7eb;
-  transition: border-color 0.18s ease;
+  margin-bottom: 1.45rem;
+  padding-left: 0;
+  border-left: none;
 }
-.exp-entry:hover { border-left-color: #1e40af; }
+.exp-entry:last-child { margin-bottom: 0; }
 .exp-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
   gap: 0.6rem;
-  margin-bottom: 0.18rem;
+  margin-bottom: 0.2rem;
 }
 .exp-title {
   font-weight: 600;
-  font-size: 0.99rem;
-  color: #1e3a8a;
+  font-size: 1rem;
+  color: #0f172a;
+  letter-spacing: -0.005em;
 }
 .exp-date {
-  background: #eef3fc;
-  color: #1e40af;
-  font-size: 0.76rem;
+  background: transparent;
+  color: #64748b;
+  font-size: 0.74rem;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
-  padding: 0.12rem 0.55rem;
-  border-radius: 4px;
-  letter-spacing: 0.01em;
+  padding: 0;
+  border-radius: 0;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
 }
 .exp-sub {
-  color: #4b5563;
-  font-size: 0.91rem;
-  margin: 0.1rem 0 0.2rem;
+  color: #475569;
+  font-size: 0.93rem;
+  margin: 0.1rem 0 0.3rem;
   line-height: 1.55;
 }
 .exp-desc {
-  color: #6b7280;
-  font-size: 0.89rem;
+  color: #64748b;
+  font-size: 0.9rem;
   margin: 0;
   line-height: 1.6;
 }
 
-.pub-mini {
-  font-size: 0.93rem;
-  line-height: 1.65;
-  margin-bottom: 0.75rem;
-  padding-left: 0;
-  color: #374151;
+.pub-grid { margin-top: 0.4rem; }
+.pub-entry {
+  display: grid;
+  grid-template-columns: 5.8rem 1fr;
+  column-gap: 1rem;
+  margin-bottom: 0.95rem;
+  line-height: 1.6;
+  font-size: 0.94rem;
+  color: #334155;
 }
-.pub-mini em { color: #111827; font-style: italic; }
-.pub-mini strong { color: #1e3a8a; }
-.pub-mini .venue {
-  display: inline-block;
-  background: #e0e7ff;
-  color: #1e3a8a;
+.pub-tag {
   font-weight: 700;
-  font-size: 0.72rem;
+  color: #0f3a8c;
+  background: #e7edfa;
+  border-radius: 3px;
+  padding: 0.18rem 0;
+  font-size: 0.7rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  border-radius: 3px;
-  padding: 0.15rem 0.55rem;
-  margin-right: 0.55rem;
-  vertical-align: 1px;
+  text-align: center;
+  height: fit-content;
+  margin-top: 0.25rem;
 }
-.pub-mini .badge {
+.pub-content { min-width: 0; }
+.pub-title { font-style: italic; color: #0f172a; }
+.pub-content strong { color: #1e3a8a; font-weight: 600; }
+.pub-badge {
   display: inline-block;
   background: #dcfce7;
-  color: #15803d;
+  color: #166534;
   border-radius: 3px;
-  padding: 0.1rem 0.45rem;
+  padding: 0.05rem 0.42rem;
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -162,31 +190,42 @@ redirect_from:
   margin-left: 0.4rem;
   vertical-align: 1px;
 }
+.pub-links { font-size: 0.85rem; margin-left: 0.25rem; color: #94a3b8; }
+.pub-links a { color: #64748b; border-bottom: none; }
+.pub-links a:hover { color: #1d4ed8; }
 
-.full-link-row {
-  margin-top: 1.1rem;
+.scholar-note {
   font-size: 0.92rem;
-  font-weight: 500;
+  color: #64748b;
+  margin: 0.4rem 0 0.2rem;
+}
+
+@media (max-width: 600px) {
+  .page__title { font-size: 2rem; }
+  .pub-entry { grid-template-columns: 1fr; row-gap: 0.3rem; }
+  .pub-tag { justify-self: start; padding: 0.18rem 0.5rem; }
+  .news-list li { flex-direction: column; gap: 0.15rem; }
+  .news-list li > strong:first-child { padding-top: 0; }
 }
 </style>
 
 <div class="about-section">
 
-<p class="intro-box">I am a Research Associate at the <a href="https://www.manchester.ac.uk/">University of Manchester</a>, working with <a href="https://chenjiaoyan.github.io/">Dr. Jiaoyan Chen</a> on the <a href="https://research.manchester.ac.uk/en/projects/ontoem-semantic-embedding-for-ontologies/">OntoEm</a> project (Semantic Embedding for Ontologies). My research focuses on <strong>ontology reasoning, modularization, and embedding</strong>, combining symbolic and neural approaches to knowledge representation.</p>
+<p class="intro-lead">I am a Research Associate at the <a href="https://www.manchester.ac.uk/">University of Manchester</a>, working with <a href="https://chenjiaoyan.github.io/">Dr. Jiaoyan Chen</a> on the <a href="https://research.manchester.ac.uk/en/projects/ontoem-semantic-embedding-for-ontologies/">OntoEm</a> project (Semantic Embedding for Ontologies). My research focuses on <strong>ontology reasoning, modularization, and embedding</strong>, combining symbolic and neural approaches to knowledge representation.</p>
 
-<h2>Recent News</h2>
+<h2 id="news">Recent News</h2>
 
 <ul class="news-list">
-  <li><strong>Apr 2026</strong> — Paper <em>RegD: Hierarchical Embeddings via Dissimilarity between Arbitrary Euclidean Regions</em> accepted at <strong>KR 2026</strong> (ML Track). [<a href="https://arxiv.org/abs/2501.17518">arXiv</a>]</li>
-  <li><strong>Jan 2026</strong> — Paper <em>Large Language Model for OWL Proofs</em> accepted at <strong>The Web Conference 2026 (WWW)</strong>. [<a href="https://arxiv.org/abs/2601.12444">arXiv</a>]</li>
+  <li><strong>Apr 2026</strong> <span>Paper <em>RegD: Hierarchical Embeddings via Dissimilarity between Arbitrary Euclidean Regions</em> accepted at <strong>KR 2026</strong> (ML Track). [<a href="https://arxiv.org/abs/2501.17518">arXiv</a>]</span></li>
+  <li><strong>Jan 2026</strong> <span>Paper <em>Large Language Model for OWL Proofs</em> accepted at <strong>The Web Conference 2026 (WWW)</strong>. [<a href="https://arxiv.org/abs/2601.12444">arXiv</a>]</span></li>
 </ul>
 
-<h2>Research Experience</h2>
+<h2 id="experience">Research Experience</h2>
 
 <div class="exp-entry">
   <div class="exp-header">
     <span class="exp-title">University of Manchester</span>
-    <span class="exp-date">Jun 2024 – present</span>
+    <span class="exp-date">Jun 2024 – Present</span>
   </div>
   <div class="exp-sub">Research Associate · supervised by Dr. Jiaoyan Chen · Manchester, UK</div>
   <div class="exp-desc">Neural-symbolic Knowledge Representation; supported by EPSRC project <em>OntoEm: Semantic Embedding for Ontologies</em>.</div>
@@ -219,7 +258,7 @@ redirect_from:
   <div class="exp-desc">Ontology modularization via uniform interpolation for expressive ontologies.</div>
 </div>
 
-<h2>Education</h2>
+<h2 id="education">Education</h2>
 
 <div class="exp-entry">
   <div class="exp-header">
@@ -243,20 +282,91 @@ redirect_from:
   <div class="exp-sub">Bachelor of Mathematics · Tianjin, China</div>
 </div>
 
-<h2>Selected Publications</h2>
+<h2 id="publications">Publications</h2>
 
-<div class="pub-mini"><span class="venue">WWW 2026</span> <em>Large Language Model for OWL Proofs.</em> <strong>H. Yang</strong>, J. Chen, U. Sattler.<span class="badge">Accepted</span> [<a href="https://arxiv.org/abs/2601.12444">arXiv</a>]</div>
+<p class="scholar-note">A complete list is also available on <a href="https://scholar.google.com/citations?user=HqVFCscAAAAJ&hl=en">Google Scholar</a>.</p>
 
-<div class="pub-mini"><span class="venue">KR 2026</span> <em><a href="https://arxiv.org/abs/2501.17518">RegD: Hierarchical Embeddings via Dissimilarity between Arbitrary Euclidean Regions.</a></em> <strong>H. Yang</strong>, J. Chen.<span class="badge">Accepted</span></div>
+<h3>Accepted / In Press</h3>
 
-<div class="pub-mini"><span class="venue">ISWC 2025</span> <em><a href="https://doi.org/10.1007/978-3-032-09527-5_24">Language Models as Ontology Encoders.</a></em> <strong>H. Yang</strong>, J. Chen, Y. He, Y. Gao, I. Horrocks. pp. 443–461.</div>
+<div class="pub-grid">
 
-<div class="pub-mini"><span class="venue">WWW 2025</span> <em><a href="https://doi.org/10.1145/3696410.3714672">TransBox: EL<sup>++</sup>-closed Ontology Embedding.</a></em> <strong>H. Yang</strong>, J. Chen, U. Sattler. pp. 22–34.</div>
+<div class="pub-entry">
+  <span class="pub-tag">WWW 2026</span>
+  <span class="pub-content"><span class="pub-title">Large Language Model for OWL Proofs.</span> <strong>Hui Yang</strong>, Jiaoyan Chen, Uli Sattler. <em>The Web Conference 2026</em>.<span class="pub-badge">Accepted</span> <span class="pub-links">[<a href="https://arxiv.org/abs/2601.12444">arXiv</a>]</span></span>
+</div>
 
-<div class="pub-mini"><span class="venue">IJCAI 2023</span> <em><a href="https://doi.org/10.24963/ijcai.2023/374">Efficient Computation of General Modules for ALC Ontologies.</a></em> <strong>H. Yang</strong>, P. Koopmann, Y. Ma, N. Bidoit. pp. 3356–3364.</div>
+<div class="pub-entry">
+  <span class="pub-tag">KR 2026</span>
+  <span class="pub-content"><span class="pub-title">RegD: Hierarchical Embeddings via Dissimilarity between Arbitrary Euclidean Regions.</span> <strong>Hui Yang</strong>, Jiaoyan Chen. <em>KR 2026 (ML Track)</em>.<span class="pub-badge">Accepted</span> <span class="pub-links">[<a href="https://arxiv.org/abs/2501.17518">arXiv</a>]</span></span>
+</div>
 
-<div class="pub-mini"><span class="venue">AAAI 2023</span> <em><a href="https://doi.org/10.1609/aaai.v37i5.25808">Efficient Extraction of EL-Ontology Deductive Modules.</a></em> <strong>H. Yang</strong>, Y. Ma, N. Bidoit. pp. 6575–6582.</div>
+</div>
 
-<p class="full-link-row"><a href="/publications/">→ Full publication list</a></p>
+<h3>Conference Papers</h3>
+
+<div class="pub-grid">
+
+<div class="pub-entry">
+  <span class="pub-tag">ISWC 2025</span>
+  <span class="pub-content"><span class="pub-title"><a href="https://doi.org/10.1007/978-3-032-09527-5_24">Language Models as Ontology Encoders.</a></span> <strong>Hui Yang</strong>, Jiaoyan Chen, Yuan He, Yongsheng Gao, Ian Horrocks. In <em>International Semantic Web Conference</em>, pp. 443–461. <span class="pub-links">[<a href="https://arxiv.org/abs/2507.14334">arXiv</a>]</span></span>
+</div>
+
+<div class="pub-entry">
+  <span class="pub-tag">WWW 2025</span>
+  <span class="pub-content"><span class="pub-title"><a href="https://doi.org/10.1145/3696410.3714672">TransBox: EL<sup>++</sup>-closed Ontology Embedding.</a></span> <strong>Hui Yang</strong>, Jiaoyan Chen, Uli Sattler. In <em>Proceedings of the ACM on Web Conference 2025</em>, pp. 22–34. <span class="pub-links">[<a href="https://arxiv.org/abs/2410.14571">arXiv</a>]</span></span>
+</div>
+
+<div class="pub-entry">
+  <span class="pub-tag">PAKDD 2024</span>
+  <span class="pub-content"><span class="pub-title"><a href="https://doi.org/10.1007/978-981-97-2253-2_31">Alleviating Over-Smoothing via Aggregation over Compact Manifolds.</a></span> Dongzhuoran Zhou, <strong>Hui Yang</strong>, Bo Xiong, Yue Ma, Evgeny Kharlamov. In <em>Pacific-Asia Conference on Knowledge Discovery and Data Mining</em>, pp. 390–404. <span class="pub-links">[<a href="https://arxiv.org/abs/2407.19231">arXiv</a>]</span></span>
+</div>
+
+<div class="pub-entry">
+  <span class="pub-tag">ESWC 2024</span>
+  <span class="pub-content"><span class="pub-title"><a href="https://doi.org/10.1007/978-3-031-60626-7_6">Low-Dimensional Hyperbolic Knowledge Graph Embedding for Better Extrapolation to Under-Represented Data.</a></span> Zhuoxun Zheng, Baifan Zhou, <strong>Hui Yang</strong>, Zhipeng Tan, Arild Waaler, Evgeny Kharlamov, Ahmet Soylu. In <em>European Semantic Web Conference</em>, pp. 100–120.</span>
+</div>
+
+<div class="pub-entry">
+  <span class="pub-tag">IJCAI 2023</span>
+  <span class="pub-content"><span class="pub-title"><a href="https://doi.org/10.24963/ijcai.2023/374">Efficient Computation of General Modules for ALC Ontologies.</a></span> <strong>Hui Yang</strong>, Patrick Koopmann, Yue Ma, Nicole Bidoit. In <em>International Joint Conference on Artificial Intelligence</em>, pp. 3356–3364.</span>
+</div>
+
+<div class="pub-entry">
+  <span class="pub-tag">AAAI 2023</span>
+  <span class="pub-content"><span class="pub-title"><a href="https://doi.org/10.1609/aaai.v37i5.25808">Efficient Extraction of EL-Ontology Deductive Modules.</a></span> <strong>Hui Yang</strong>, Yue Ma, Nicole Bidoit. In <em>AAAI Conference on Artificial Intelligence</em>, pp. 6575–6582.</span>
+</div>
+
+<div class="pub-entry">
+  <span class="pub-tag">IJCAR 2022</span>
+  <span class="pub-content"><span class="pub-title"><a href="https://doi.org/10.1007/978-3-031-10769-6_19">Hypergraph-Based Inference Rules for Computing EL<sup>+</sup>-Ontology Justifications.</a></span> <strong>Hui Yang</strong>, Yue Ma, Nicole Bidoit. In <em>International Joint Conference on Automated Reasoning</em>, pp. 310–328.</span>
+</div>
+
+<div class="pub-entry">
+  <span class="pub-tag">ESWC 2022</span>
+  <span class="pub-content"><span class="pub-title"><a href="https://doi.org/10.1007/978-3-031-06981-9_4">Union and Intersection of All Justifications.</a></span> Jieying Chen, Yue Ma, Rafael Peñaloza, <strong>Hui Yang</strong>. In <em>European Semantic Web Conference</em>, pp. 56–73.</span>
+</div>
+
+</div>
+
+<h3>Journal Articles</h3>
+
+<div class="pub-grid">
+
+<div class="pub-entry">
+  <span class="pub-tag">JDSA 2025</span>
+  <span class="pub-content"><span class="pub-title"><a href="https://doi.org/10.1007/s41060-025-00875-z">Alleviating Over-Smoothing via Aggregation over Compact Manifolds (Extended Version).</a></span> Dongzhuoran Zhou, <strong>Hui Yang</strong>, Bo Xiong, Yue Ma, Evgeny Kharlamov. <em>International Journal of Data Science and Analytics</em>, 20(8): 7055–7069.</span>
+</div>
+
+<div class="pub-entry">
+  <span class="pub-tag">DMKD 2024</span>
+  <span class="pub-content"><span class="pub-title"><a href="https://doi.org/10.1007/s10618-024-01050-x">Knowledge Graph Embedding Closed under Composition.</a></span> Zhuoxun Zheng, Baifan Zhou, <strong>Hui Yang</strong>, Zhipeng Tan, Zequn Sun, Chunnong Li, Arild Waaler, Evgeny Kharlamov, Ahmet Soylu. <em>Data Mining and Knowledge Discovery</em>, 38(6).</span>
+</div>
+
+<div class="pub-entry">
+  <span class="pub-tag">IMRN 2021</span>
+  <span class="pub-content"><span class="pub-title"><a href="https://doi.org/10.1093/imrn/rnz231">A Question of Norton-Sullivan in the Analytic Case.</a></span> Jian Wang, <strong>Hui Yang</strong>. <em>International Mathematics Research Notices</em>, 2021(21): 17201–17219.</span>
+</div>
+
+</div>
 
 </div>
