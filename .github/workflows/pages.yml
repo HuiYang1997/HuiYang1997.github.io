@@ -12,9 +12,12 @@ permissions:
   pages: write
   id-token: write
 
+# Keep Pages deployments serialized, but let an active production deployment finish.
+# GitHub's Pages starter workflows recommend this to avoid cancelling deployments
+# while the Pages service is still finalizing the previous artifact.
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
