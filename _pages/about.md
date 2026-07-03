@@ -13,6 +13,7 @@ redirect_from:
   --home-ink: #202733;
   --home-muted: #677384;
   --home-soft: #8c96a4;
+  --home-line: #edf1f5;
   --home-blue: #2c5d8f;
   --home-paper: #ffffff;
 }
@@ -118,9 +119,9 @@ body {
   font-weight: 700;
   color: #243044;
   letter-spacing: 0;
-  margin: 1.8rem 0 0.56rem;
-  padding-bottom: 0;
-  border-bottom: none;
+  margin: 1.85rem 0 0.62rem;
+  padding-bottom: 0.34rem;
+  border-bottom: 1px solid var(--home-line);
 }
 .about-section h3 {
   font-size: 0.62rem;
@@ -143,7 +144,7 @@ body {
 
 .news-list {
   display: grid;
-  gap: 0.42rem;
+  gap: 0;
   list-style: none;
   padding-left: 0;
   margin: 0.05rem 0 0;
@@ -156,9 +157,12 @@ body {
   grid-template-columns: 4.75rem 1fr;
   gap: 0.7rem;
   align-items: start;
-  padding: 0;
+  padding: 0.34rem 0;
   border-bottom: none;
   color: #3b4658;
+}
+.news-list li + li {
+  border-top: 1px solid rgba(237, 241, 245, 0.88);
 }
 .news-list li:first-child {
   padding-left: 0;
@@ -178,6 +182,9 @@ body {
   margin-bottom: 0;
   padding: 0.45rem 0 0.5rem;
   border-bottom: none;
+}
+.exp-entry + .exp-entry {
+  border-top: 1px solid rgba(237, 241, 245, 0.86);
 }
 .exp-header {
   display: flex;
@@ -217,7 +224,7 @@ body {
 
 .pub-grid {
   display: grid;
-  gap: 0.54rem;
+  gap: 0;
   margin: 0.16rem 0 0.45rem;
 }
 .pub-entry {
@@ -225,13 +232,16 @@ body {
   grid-template-columns: 4.35rem 1fr;
   column-gap: 0.72rem;
   margin-bottom: 0;
-  padding: 0;
+  padding: 0.42rem 0;
   border-bottom: none;
   line-height: 1.62;
   font-size: 0.76rem;
   color: #455064;
 }
-.pub-entry:first-child { padding-top: 0; }
+.pub-entry:first-child { padding-top: 0.18rem; }
+.pub-entry + .pub-entry {
+  border-top: 1px solid rgba(237, 241, 245, 0.86);
+}
 .pub-tag {
   font-weight: 700;
   color: #7c8798;
@@ -290,8 +300,7 @@ body {
   .about-section { font-size: 0.88rem; max-width: 100%; }
   .page__title { font-size: 1.55rem; }
   .intro-lead { padding-left: 0; }
-  .pub-grid { gap: 0.62rem; }
-  .pub-entry { grid-template-columns: 1fr; row-gap: 0.14rem; }
+  .pub-entry { grid-template-columns: 1fr; row-gap: 0.14rem; padding: 0.48rem 0; }
   .pub-tag { justify-self: start; margin-top: 0; }
   .news-list li { grid-template-columns: 1fr; gap: 0.12rem; }
   .news-list li > strong:first-child { padding-top: 0; }
