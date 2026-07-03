@@ -9,6 +9,6 @@ paperurl: 'https://arxiv.org/abs/2601.12444'
 citation: 'Yang, H., Chen, J., & Sattler, U. (2026). "Large Language Model for OWL Proofs." <i>Proceedings of the ACM Web Conference 2026</i>.'
 ---
 
-[arXiv preprint](https://arxiv.org/abs/2601.12444)
+[arXiv](https://arxiv.org/abs/2601.12444)
 
-Recommended citation: Yang, H., Chen, J., & Sattler, U. (2026). "Large Language Model for OWL Proofs." *Proceedings of the ACM Web Conference 2026*. Accepted.
+Recommended citation: Yang, H., Chen, J., & Sattler, U. (2026). "Large Language Model for OWL Proofs." *Proceedings of the ACM Web Conference 2026*.
