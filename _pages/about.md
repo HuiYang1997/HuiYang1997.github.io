@@ -16,6 +16,7 @@ redirect_from:
   --home-line: #edf1f5;
   --home-blue: #2c5d8f;
   --home-paper: #ffffff;
+  --home-panel: rgba(255, 255, 255, 0.78);
 }
 
 body {
@@ -137,9 +138,24 @@ body {
   font-size: 0.88rem;
   line-height: 1.72;
   color: #2d3748;
-  margin: 0.34rem 0 1.2rem;
+  margin: 0.34rem 0 1.05rem;
   padding: 0;
   border-left: none;
+}
+
+.content-block {
+  background: var(--home-panel);
+  border: 1px solid rgba(226, 232, 240, 0.78);
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(32, 39, 51, 0.045);
+  margin: 1.15rem 0 0;
+  padding: 1rem 1.08rem 1.05rem;
+}
+.content-block + .content-block {
+  margin-top: 1.25rem;
+}
+.content-block h2:first-child {
+  margin-top: 0;
 }
 
 .news-list {
@@ -300,6 +316,7 @@ body {
   .about-section { font-size: 0.88rem; max-width: 100%; }
   .page__title { font-size: 1.55rem; }
   .intro-lead { padding-left: 0; }
+  .content-block { padding: 0.85rem 0.82rem 0.9rem; margin-top: 1rem; }
   .pub-entry { grid-template-columns: 1fr; row-gap: 0.14rem; padding: 0.48rem 0; }
   .pub-tag { justify-self: start; margin-top: 0; }
   .news-list li { grid-template-columns: 1fr; gap: 0.12rem; }
@@ -312,6 +329,7 @@ body {
 
 <p class="intro-lead">I am a Research Associate at the <a href="https://www.manchester.ac.uk/">University of Manchester</a>, working with <a href="https://chenjiaoyan.github.io/">Dr. Jiaoyan Chen</a> on the <a href="https://research.manchester.ac.uk/en/projects/ontoem-semantic-embedding-for-ontologies/">OntoEm</a> project (Semantic Embedding for Ontologies). My research focuses on <strong>ontology reasoning, modularization, and embedding</strong>, combining symbolic and neural approaches to knowledge representation.</p>
 
+<section class="content-block">
 <h2 id="news">Recent News</h2>
 
 <ul class="news-list">
@@ -319,7 +337,9 @@ body {
   <li><strong>Apr 2026</strong> <span>A paper accepted at <strong>KR 2026</strong> (ML Track). [<a href="https://arxiv.org/abs/2501.17518">arXiv</a>]</span></li>
   <li><strong>Jan 2026</strong> <span>A paper published at <strong>WWW 2026</strong>. [<a href="https://arxiv.org/abs/2601.12444">arXiv</a>]</span></li>
 </ul>
+</section>
 
+<section class="content-block">
 <h2 id="experience">Research Experience</h2>
 
 <div class="exp-entry">
@@ -357,7 +377,9 @@ body {
   <div class="exp-sub">Visiting Student · supervised by Dr. Patrick Koopmann · Dresden, Germany</div>
   <div class="exp-desc">Ontology modularization via uniform interpolation for expressive ontologies.</div>
 </div>
+</section>
 
+<section class="content-block">
 <h2 id="education">Education</h2>
 
 <div class="exp-entry">
@@ -381,7 +403,9 @@ body {
   </div>
   <div class="exp-sub">Bachelor of Mathematics · Tianjin, China</div>
 </div>
+</section>
 
+<section class="content-block">
 <h2 id="publications">Publications</h2>
 
 <p class="scholar-note">A complete list is also available on <a href="https://scholar.google.com/citations?user=HqVFCscAAAAJ&hl=en">Google Scholar</a>.</p>
@@ -468,5 +492,6 @@ body {
 </div>
 
 </div>
+</section>
 
 </div>
